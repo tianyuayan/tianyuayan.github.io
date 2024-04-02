@@ -1,0 +1,159 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 95%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0.5rem 0;
+}
+
+#branding h1 a {
+    font-size: calc(0.5em + 1vw); /* Responsive font size */
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 0;
+    min-height: 70px;
+    border-bottom: 1px solid #ddd;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+    font-size: calc(1rem + 0.5vw); /* Responsive font size */
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding,
+header nav {
+    margin-top: 10px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+}
+
+header .current a {
+    color: #888;
+}
+
+.main {
+    padding: 2rem;
+    background-color: white;
+}
+
+.main h2 {
+    font-size: calc(2rem + 1vw); /* Responsive font size */
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-size: calc(1rem + 0.5vw); /* Responsive font size */
+}
+
+footer {
+    padding: 1.5rem;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap profile components on smaller screens */
+}
+
+.profile-text,
+.profile-photo {
+    flex: 1; /* Allow both elements to grow equally */
+}
+
+.profile-photo {
+    text-align: center;
+    padding-left: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles 
+@media only screen and (max-width: 768px) {
+    .container,
+    .profile-container {
+        width: 100%;
+    }
+
+    header li {
+        display: inline-block; /* Display nav items inline for smaller screens 
+        padding: 10px 5px; /* Adjust padding to maintain horizontal layout 
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+}
+*/
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header li {
+        padding: 0 10px 0 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    .underscored-link {
+        text-decoration: underline;
+    }
+}
+.underscored-link {
+    text-decoration: underline;
+}
